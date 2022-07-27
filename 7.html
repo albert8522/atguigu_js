@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+    <script src="./jq/jquery-1.12.3.js"></script>
+
+    <script>
+        $(function(){
+            // $('ul span').css('background','yellow');
+            // $('ul>span').css('background','yellow');
+            // $('.box+li').css('background','red');
+            $('ul .box~*').css('background','blue');
+        });
+    </script>
+</head>
+<body>
+    <div id="div1" class="box" >div1</div>
+    <div id="div2"class="box">div2</div>
+    <div id="div3">div3</div>
+    <span class="box">span</span>
+
+
+    <ul>
+        <li>AAAAAA</li>
+        <li title=""hello>BBBBBBB</li>
+        <li class="box">CCCCC(class=box)</li>
+        <li title="hello">DDDDD(title=hello)</li>
+       
+        <span >EEEEE</span>
+    </ul>
+</body>
+</html>

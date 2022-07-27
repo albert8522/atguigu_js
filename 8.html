@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+    <script src="./jq/jquery-1.12.3.js"></script>
+    <script>
+        $(function(){
+
+            // $('div:first').css('background','red');
+            // $('div:last').css('background','red');
+            // $('div:not(.box)').css('background','blue');
+            // $('li:gt(0):lt(2)').css('background','red');
+            // $('li:contains("BBBBB")').css('background','red');
+           console.log($('li:hidden').length,$('li:hidden')[0]); 
+        //    $('li[title]').css('background','blue');
+        $('li[title=hello]').css('background','red');
+        });
+    </script>
+</head>
+<body>
+    <div id="div1" class="box">class为box的div1</div>
+<div id="div2" class="box">class为box的div2</div>
+<div id="div3">div3</div>
+<span class="box">class为box的span</span>
+<br/>
+<ul>
+  <li>AAAAA</li>
+  <li title="hello">BBBBB</li>
+  <li class="box">CCCCC</li>
+  <li title="hello">DDDDDD</li>
+  <li title="two">BBBBB</li>
+  <li style="display:none">我本来是隐藏的</li>
+</ul>
+</body>
+</html>
